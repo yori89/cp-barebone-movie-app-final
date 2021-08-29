@@ -25,7 +25,7 @@ def create(request):
     if request.method == 'POST':
         data = {
             'Name': request.POST.get('name'),
-            'Pictures': [{'url': request.POST.get('url') or 'https://www.classicposters.com/images/nopicture.gif'}],
+            'Pictures': [{'url': request.POST.get('url') or 'https://lascrucesfilmfest.com/wp-content/uploads/2018/01/no-poster-available-737x1024.jpg'}],
             'Rating': int(request.POST.get('rating')),
             'Notes': request.POST.get('notes')
         }
@@ -42,7 +42,7 @@ def edit(request, movie_id):
     if request.method == 'POST':
         data = {
             'Name': request.POST.get('name'),
-            'Pictures': [{'url': request.POST.get('url') or 'https://www.classicposters.com/images/nopicture.gif'}],
+            'Pictures': [{'url': request.POST.get('url') or 'https://lascrucesfilmfest.com/wp-content/uploads/2018/01/no-poster-available-737x1024.jpg'}],
             'Rating': int(request.POST.get('rating')),
             'Notes': request.POST.get('notes')
         }
